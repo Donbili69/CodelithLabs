@@ -1,0 +1,13 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Disallow admin or private areas (if any in future)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Sitemap location
+Sitemap: https://codelithlabs.com/sitemap.xml
+
+# Crawl-delay (optional, in seconds)
+Crawl-delay: 1
