@@ -1,7 +1,7 @@
-import { Mail, Phone, MapPin, Heart, ArrowUp, Sparkles } from 'lucide-react';
+import { Mail, Phone, MapPin, Heart, ArrowUp, Sparkles } from 'lucide-react'
 
 export const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear()
 
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden">
@@ -22,7 +22,8 @@ export const Footer = () => {
               <Sparkles size={20} className="text-yellow-400 animate-pulse" />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
-              Crafting digital experiences that inspire and innovate. We're passionate about technology and dedicated to your success.
+              Crafting digital experiences that inspire and innovate. We're passionate about
+              technology and dedicated to your success.
             </p>
             <div className="flex items-center gap-2 text-gray-400 text-sm">
               <span>Made with</span>
@@ -38,24 +39,78 @@ export const Footer = () => {
               Quick Links
             </h4>
             <ul className="space-y-3">
-              <li><a href="#home" className="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2 group">
-                <ArrowUp size={14} className="transform group-hover:-translate-y-1 transition-transform" /> Home
-              </a></li>
-              <li><a href="#about" className="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2 group">
-                <ArrowUp size={14} className="transform group-hover:-translate-y-1 transition-transform" /> About
-              </a></li>
-              <li><a href="#services" className="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2 group">
-                <ArrowUp size={14} className="transform group-hover:-translate-y-1 transition-transform" /> Services
-              </a></li>
-              <li><a href="#products" className="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2 group">
-                <ArrowUp size={14} className="transform group-hover:-translate-y-1 transition-transform" /> Products
-              </a></li>
-              <li><a href="#team" className="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2 group">
-                <ArrowUp size={14} className="transform group-hover:-translate-y-1 transition-transform" /> Team
-              </a></li>
-              <li><a href="#contact" className="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2 group">
-                <ArrowUp size={14} className="transform group-hover:-translate-y-1 transition-transform" /> Contact
-              </a></li>
+              <li>
+                <a
+                  href="#home"
+                  className="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2 group"
+                >
+                  <ArrowUp
+                    size={14}
+                    className="transform group-hover:-translate-y-1 transition-transform"
+                  />{' '}
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  className="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2 group"
+                >
+                  <ArrowUp
+                    size={14}
+                    className="transform group-hover:-translate-y-1 transition-transform"
+                  />{' '}
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  className="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2 group"
+                >
+                  <ArrowUp
+                    size={14}
+                    className="transform group-hover:-translate-y-1 transition-transform"
+                  />{' '}
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#products"
+                  className="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2 group"
+                >
+                  <ArrowUp
+                    size={14}
+                    className="transform group-hover:-translate-y-1 transition-transform"
+                  />{' '}
+                  Products
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#team"
+                  className="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2 group"
+                >
+                  <ArrowUp
+                    size={14}
+                    className="transform group-hover:-translate-y-1 transition-transform"
+                  />{' '}
+                  Team
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  className="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2 group"
+                >
+                  <ArrowUp
+                    size={14}
+                    className="transform group-hover:-translate-y-1 transition-transform"
+                  />{' '}
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -66,12 +121,24 @@ export const Footer = () => {
               Services
             </h4>
             <ul className="space-y-3">
-              <li className="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">Web Development</li>
-              <li className="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">Mobile Apps</li>
-              <li className="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">Cloud Solutions</li>
-              <li className="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">AI & Machine Learning</li>
-              <li className="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">Data Analytics</li>
-              <li className="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">Cybersecurity</li>
+              <li className="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">
+                Web Development
+              </li>
+              <li className="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">
+                Mobile Apps
+              </li>
+              <li className="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">
+                Cloud Solutions
+              </li>
+              <li className="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">
+                AI & Machine Learning
+              </li>
+              <li className="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">
+                Data Analytics
+              </li>
+              <li className="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">
+                Cybersecurity
+              </li>
             </ul>
           </div>
 
@@ -84,21 +151,25 @@ export const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Mail size={16} className="text-blue-400 flex-shrink-0 mt-0.5" />
-                <a href="mailto:team.codelithlabs@gmail.com" className="text-gray-400 hover:text-white text-sm transition-colors">
+                <a
+                  href="mailto:team.codelithlabs@gmail.com"
+                  className="text-gray-400 hover:text-white text-sm transition-colors"
+                >
                   team.codelithlabs@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <Phone size={16} className="text-green-400 flex-shrink-0 mt-0.5" />
-                <a href="tel:+1234567890" className="text-gray-400 hover:text-white text-sm transition-colors">
+                <a
+                  href="tel:+1234567890"
+                  className="text-gray-400 hover:text-white text-sm transition-colors"
+                >
                   +1 (234) 567-890
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-purple-400 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-400 text-sm">
-                  Kokrajhar, Assam, India
-                </span>
+                <span className="text-gray-400 text-sm">Kokrajhar, Assam, India</span>
               </li>
             </ul>
           </div>
@@ -115,9 +186,15 @@ export const Footer = () => {
           </div>
 
           <div className="flex items-center gap-6 text-sm">
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">Cookie Policy</a>
+            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              Privacy Policy
+            </a>
+            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              Terms of Service
+            </a>
+            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              Cookie Policy
+            </a>
           </div>
         </div>
 
@@ -133,5 +210,5 @@ export const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}

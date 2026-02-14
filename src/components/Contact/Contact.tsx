@@ -1,31 +1,43 @@
-import { useState } from 'react';
-import { Mail, Phone, MapPin, Send, MessageCircle, Headphones, Sparkles, ArrowRight } from 'lucide-react';
+import { useState } from 'react'
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  MessageCircle,
+  Headphones,
+  Sparkles,
+  ArrowRight,
+} from 'lucide-react'
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
-  });
+  })
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
+    const { name, value } = e.target
+    setFormData(prev => ({ ...prev, [name]: value }))
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form Data:', formData);
-    alert('Thank you for your message. We will get back to you soon!');
-    setFormData({ name: '', email: '', message: '' });
-  };
+    e.preventDefault()
+    console.log('Form Data:', formData)
+    alert('Thank you for your message. We will get back to you soon!')
+    setFormData({ name: '', email: '', message: '' })
+  }
 
   return (
     <section id="contact" className="py-24 px-4 bg-gradient-mesh relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-dots opacity-30"></div>
       <div className="absolute top-20 left-10 w-32 h-32 bg-purple-200 rounded-full mix-blend-multiply filter blur-2xl opacity-30 animate-float"></div>
-      <div className="absolute bottom-20 right-10 w-40 h-40 bg-blue-200 rounded-full mix-blend-multiply filter blur-2xl opacity-30 animate-float" style={{ animationDelay: '1s' }}></div>
+      <div
+        className="absolute bottom-20 right-10 w-40 h-40 bg-blue-200 rounded-full mix-blend-multiply filter blur-2xl opacity-30 animate-float"
+        style={{ animationDelay: '1s' }}
+      ></div>
 
       <div className="relative z-10 max-w-5xl mx-auto">
         {/* Section Header */}
@@ -36,7 +48,10 @@ export const Contact = () => {
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Let's Create Something
-            <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600"> Amazing Together</span>
+            <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
+              {' '}
+              Amazing Together
+            </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Have a project in mind? We'd love to hear from you. Let's build something extraordinary.
@@ -55,7 +70,10 @@ export const Contact = () => {
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-1">Email Us</h3>
                   <p className="text-gray-500 text-sm mb-2">We'll respond within 24 hours</p>
-                  <a href="mailto:team.codelithlabs@gmail.com" className="text-blue-600 font-medium hover:underline">
+                  <a
+                    href="mailto:team.codelithlabs@gmail.com"
+                    className="text-blue-600 font-medium hover:underline"
+                  >
                     team.codelithlabs@gmail.com
                   </a>
                 </div>
@@ -99,7 +117,8 @@ export const Contact = () => {
                 <h3 className="text-lg font-semibold text-gray-900">Quick Response Guarantee</h3>
               </div>
               <p className="text-gray-600 text-sm">
-                We typically respond to all inquiries within 2 hours during business hours. Your time is valuable, and we're committed to getting back to you fast.
+                We typically respond to all inquiries within 2 hours during business hours. Your
+                time is valuable, and we're committed to getting back to you fast.
               </p>
             </div>
           </div>
@@ -128,7 +147,9 @@ export const Contact = () => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Email Address
+                  </label>
                   <input
                     type="email"
                     name="email"
@@ -159,7 +180,10 @@ export const Contact = () => {
                 >
                   <Send size={20} />
                   Send Message
-                  <ArrowRight size={20} className="transform group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight
+                    size={20}
+                    className="transform group-hover:translate-x-1 transition-transform"
+                  />
                 </button>
               </div>
 
@@ -172,5 +196,5 @@ export const Contact = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

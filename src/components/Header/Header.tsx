@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import { Menu, X, Search, Grid, Bell } from 'lucide-react';
+import { useState } from 'react'
+import { Menu, X, Search, Grid, Bell } from 'lucide-react'
 
 export const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navLinks = [
     { label: 'Home', href: '#home' },
@@ -11,15 +11,15 @@ export const Header = () => {
     { label: 'Products', href: '#products' },
     { label: 'Team', href: '#team' },
     { label: 'Contact', href: '#contact' },
-  ];
+  ]
 
   const handleScroll = (href: string) => {
-    const element = document.querySelector(href);
+    const element = document.querySelector(href)
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: 'smooth' })
     }
-    setIsMenuOpen(false);
-  };
+    setIsMenuOpen(false)
+  }
 
   return (
     <header className="fixed top-0 w-full bg-white border-b border-gray-100 z-50">
@@ -35,7 +35,7 @@ export const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6">
-          {navLinks.map((link) => (
+          {navLinks.map(link => (
             <button
               key={link.href}
               onClick={() => handleScroll(link.href)}
@@ -75,7 +75,7 @@ export const Header = () => {
       {isMenuOpen && (
         <nav className="md:hidden bg-white border-t border-gray-100 px-4 py-3">
           <div className="flex flex-col gap-1">
-            {navLinks.map((link) => (
+            {navLinks.map(link => (
               <button
                 key={link.href}
                 onClick={() => handleScroll(link.href)}
@@ -88,5 +88,5 @@ export const Header = () => {
         </nav>
       )}
     </header>
-  );
-};
+  )
+}

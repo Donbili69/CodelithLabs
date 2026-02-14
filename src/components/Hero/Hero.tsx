@@ -1,4 +1,4 @@
-import { Search, Mic, Camera, Star, Zap, TrendingUp, Sparkles } from 'lucide-react';
+import { Search, Mic, Camera, Star, Zap, TrendingUp, Sparkles } from 'lucide-react'
 
 export const Hero = () => {
   return (
@@ -8,9 +8,18 @@ export const Hero = () => {
     >
       {/* Decorative Background Elements */}
       <div className="absolute top-20 right-10 w-64 h-64 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-float"></div>
-      <div className="absolute bottom-20 left-10 w-72 h-72 bg-green-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-float" style={{ animationDelay: '1s' }}></div>
-      <div className="absolute top-1/2 left-1/4 w-48 h-48 bg-yellow-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-float" style={{ animationDelay: '2s' }}></div>
-      <div className="absolute bottom-1/3 right-1/4 w-56 h-56 bg-red-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-float" style={{ animationDelay: '3s' }}></div>
+      <div
+        className="absolute bottom-20 left-10 w-72 h-72 bg-green-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-float"
+        style={{ animationDelay: '1s' }}
+      ></div>
+      <div
+        className="absolute top-1/2 left-1/4 w-48 h-48 bg-yellow-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-float"
+        style={{ animationDelay: '2s' }}
+      ></div>
+      <div
+        className="absolute bottom-1/3 right-1/4 w-56 h-56 bg-red-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-float"
+        style={{ animationDelay: '3s' }}
+      ></div>
 
       {/* Floating Stickers */}
       <div className="absolute top-32 left-8 animate-float sticker">
@@ -23,12 +32,18 @@ export const Hero = () => {
           <Zap size={24} />
         </div>
       </div>
-      <div className="absolute bottom-32 left-16 animate-float sticker" style={{ animationDelay: '1.5s' }}>
+      <div
+        className="absolute bottom-32 left-16 animate-float sticker"
+        style={{ animationDelay: '1.5s' }}
+      >
         <div className="bg-green-500 text-white p-3 rounded-full shadow-lg transform -rotate-6">
           <TrendingUp size={24} />
         </div>
       </div>
-      <div className="absolute bottom-40 right-8 animate-bounce sticker" style={{ animationDelay: '2s' }}>
+      <div
+        className="absolute bottom-40 right-8 animate-bounce sticker"
+        style={{ animationDelay: '2s' }}
+      >
         <div className="bg-red-500 text-white p-3 rounded-full shadow-lg transform rotate-6">
           <Sparkles size={24} />
         </div>
@@ -53,7 +68,8 @@ export const Hero = () => {
 
         {/* Mission Statement */}
         <p className="text-lg text-gray-500 mb-10 max-w-3xl mx-auto animate-fade-in-up stagger-3">
-          Where cutting-edge technology meets creative brilliance. We build software that doesn't just work—it
+          Where cutting-edge technology meets creative brilliance. We build software that doesn't
+          just work—it
           <span className="text-purple-600 font-medium"> wows</span>.
         </p>
 
@@ -108,15 +124,21 @@ export const Hero = () => {
         {/* Stats */}
         <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto animate-fade-in-up stagger-6">
           <div className="text-center">
-            <div className="text-4xl font-bold text-gradient-blue bg-clip-text text-transparent">100+</div>
+            <div className="text-4xl font-bold text-gradient-blue bg-clip-text text-transparent">
+              100+
+            </div>
             <div className="text-sm text-gray-500">Projects Delivered</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-yellow-500">50+</div>
+            <div className="text-4xl font-bold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-yellow-500">
+              50+
+            </div>
             <div className="text-sm text-gray-500">Happy Clients</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-orange-500">25+</div>
+            <div className="text-4xl font-bold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-orange-500">
+              25+
+            </div>
             <div className="text-sm text-gray-500">Team Experts</div>
           </div>
         </div>
@@ -129,5 +151,5 @@ export const Hero = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

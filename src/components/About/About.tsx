@@ -1,39 +1,53 @@
-import { Target, Eye, Heart, Award, Users, TrendingUp, Star, Sparkles } from 'lucide-react';
+import { Target, Eye, Heart, Award, Users, TrendingUp, Star, Sparkles } from 'lucide-react'
 
 export const About = () => {
   const stats = [
-    { number: '100+', label: 'Projects Delivered', detail: 'Successfully completed', icon: <TrendingUp size={24} /> },
+    {
+      number: '100+',
+      label: 'Projects Delivered',
+      detail: 'Successfully completed',
+      icon: <TrendingUp size={24} />,
+    },
     { number: '50+', label: 'Happy Clients', detail: 'Worldwide trust', icon: <Users size={24} /> },
-    { number: '25+', label: 'Team Experts', detail: 'Skilled professionals', icon: <Award size={24} /> },
-  ];
+    {
+      number: '25+',
+      label: 'Team Experts',
+      detail: 'Skilled professionals',
+      icon: <Award size={24} />,
+    },
+  ]
 
   const values = [
     {
       icon: <Target size={32} />,
       title: 'Quality First',
-      description: 'Excellence in every line of code, every pixel designed, every solution delivered.',
-      color: 'blue'
+      description:
+        'Excellence in every line of code, every pixel designed, every solution delivered.',
+      color: 'blue',
     },
     {
       icon: <Eye size={32} />,
       title: 'Innovation Driven',
       description: 'Pushing boundaries, exploring new technologies, and setting new standards.',
-      color: 'purple'
+      color: 'purple',
     },
     {
       icon: <Heart size={32} />,
       title: 'Client Centric',
       description: 'Understanding needs, exceeding expectations, building lasting partnerships.',
-      color: 'red'
+      color: 'red',
     },
-  ];
+  ]
 
   return (
     <section id="about" className="py-24 px-4 bg-white relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-mesh opacity-50"></div>
       <div className="absolute top-0 right-0 w-96 h-96 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float"></div>
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float" style={{ animationDelay: '1s' }}></div>
+      <div
+        className="absolute bottom-0 left-0 w-80 h-80 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float"
+        style={{ animationDelay: '1s' }}
+      ></div>
 
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Header */}
@@ -43,11 +57,15 @@ export const About = () => {
             Who We Are
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Passionate About 
-            <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-600"> Digital Excellence</span>
+            Passionate About
+            <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-600">
+              {' '}
+              Digital Excellence
+            </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We're a team of dreamers, doers, and innovators united by a single purpose: to transform businesses through the power of technology.
+            We're a team of dreamers, doers, and innovators united by a single purpose: to transform
+            businesses through the power of technology.
           </p>
         </div>
 
@@ -65,10 +83,15 @@ export const About = () => {
                 <span className="animate-bounce inline-block">🎯</span>
               </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                At Codelithlabs, we believe technology is the catalyst for business transformation. Our mission is to empower organizations worldwide with innovative digital solutions that drive real results—not just metrics, but meaningful impact that shapes the future.
+                At Codelithlabs, we believe technology is the catalyst for business transformation.
+                Our mission is to empower organizations worldwide with innovative digital solutions
+                that drive real results—not just metrics, but meaningful impact that shapes the
+                future.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                We combine technical excellence with creative thinking to build products that don't just meet expectations, but redefine what's possible. Every project is a partnership, every challenge an opportunity to innovate.
+                We combine technical excellence with creative thinking to build products that don't
+                just meet expectations, but redefine what's possible. Every project is a
+                partnership, every challenge an opportunity to innovate.
               </p>
             </div>
           </div>
@@ -85,10 +108,14 @@ export const About = () => {
                 <span className="animate-pulse inline-block">🔮</span>
               </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                We envision a world where technology seamlessly enhances every aspect of human experience. A world where businesses of all sizes have access to the same powerful tools as tech giants.
+                We envision a world where technology seamlessly enhances every aspect of human
+                experience. A world where businesses of all sizes have access to the same powerful
+                tools as tech giants.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Our vision extends beyond code—we're building a legacy of innovation that inspires the next generation of developers, entrepreneurs, and dreamers to push boundaries and challenge conventions.
+                Our vision extends beyond code—we're building a legacy of innovation that inspires
+                the next generation of developers, entrepreneurs, and dreamers to push boundaries
+                and challenge conventions.
               </p>
             </div>
           </div>
@@ -98,23 +125,21 @@ export const About = () => {
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
             Our Core Values
-            <span className="block text-lg font-normal text-gray-500 mt-2">The principles that guide everything we do</span>
+            <span className="block text-lg font-normal text-gray-500 mt-2">
+              The principles that guide everything we do
+            </span>
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
-            {values.map((value) => (
+            {values.map(value => (
               <div
                 key={value.title}
                 className="group p-6 bg-gradient-to-br from-white to-gray-50 border-2 border-gray-100 rounded-xl hover:border-purple-300 transition-all duration-300 hover:shadow-xl hover:shadow-purple-100/50 hover:-translate-y-2 text-center"
               >
                 <div className="w-16 h-16 bg-gradient-to-br from-purple-100 to-pink-100 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
-                  <div className="text-purple-600">
-                    {value.icon}
-                  </div>
+                  <div className="text-purple-600">{value.icon}</div>
                 </div>
                 <h4 className="text-xl font-bold text-gray-900 mb-2">{value.title}</h4>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {value.description}
-                </p>
+                <p className="text-gray-600 text-sm leading-relaxed">{value.description}</p>
               </div>
             ))}
           </div>
@@ -122,7 +147,7 @@ export const About = () => {
 
         {/* Stats */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {stats.map((stat) => (
+          {stats.map(stat => (
             <div
               key={stat.label}
               className="group relative p-8 bg-gradient-to-br from-white to-gray-50 border-2 border-gray-100 rounded-2xl hover:shadow-2xl hover:shadow-blue-100/50 transition-all duration-300 hover:-translate-y-2 text-center"
@@ -141,5 +166,5 @@ export const About = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

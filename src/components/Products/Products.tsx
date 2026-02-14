@@ -1,10 +1,10 @@
-import { ChevronRight, Rocket, BarChart3, Shield, Sparkles, Zap } from 'lucide-react';
+import { ChevronRight, Rocket, BarChart3, Shield, Sparkles, Zap } from 'lucide-react'
 
 interface ProductCardProps {
-  title: string;
-  description: string;
-  features: string[];
-  icon: React.ReactNode;
+  title: string
+  description: string
+  features: string[]
+  icon: React.ReactNode
 }
 
 const ProductCard = ({ title, description, features, icon }: ProductCardProps) => (
@@ -14,7 +14,7 @@ const ProductCard = ({ title, description, features, icon }: ProductCardProps) =
   >
     {/* Background Gradient on Hover */}
     <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-    
+
     {/* Icon with 3D Effect */}
     <div className="relative z-10">
       <div className="w-16 h-16 bg-gradient-to-br from-green-100 to-green-200 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:-rotate-6 transition-all duration-300 shadow-lg">
@@ -28,14 +28,20 @@ const ProductCard = ({ title, description, features, icon }: ProductCardProps) =
     <div className="relative z-10">
       <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2 group-hover:text-green-600 transition-colors">
         {title}
-        <ChevronRight size={18} className="transform group-hover:translate-x-2 group-hover:scale-125 transition-all duration-300" />
+        <ChevronRight
+          size={18}
+          className="transform group-hover:translate-x-2 group-hover:scale-125 transition-all duration-300"
+        />
       </h3>
       <p className="text-gray-600 mb-5 leading-relaxed group-hover:text-gray-700 transition-colors">
         {description}
       </p>
       <ul className="space-y-3">
         {features.map((feature, idx) => (
-          <li key={idx} className="flex items-center gap-3 text-sm text-gray-500 group-hover:text-gray-700 transition-colors">
+          <li
+            key={idx}
+            className="flex items-center gap-3 text-sm text-gray-500 group-hover:text-gray-700 transition-colors"
+          >
             <span className="w-2.5 h-2.5 bg-green-500 rounded-full flex-shrink-0 group-hover:scale-125 transition-transform"></span>
             {feature}
           </li>
@@ -46,29 +52,37 @@ const ProductCard = ({ title, description, features, icon }: ProductCardProps) =
     {/* Decorative Element */}
     <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-green-100 rounded-full opacity-0 group-hover:opacity-50 transition-all duration-500 group-hover:scale-150"></div>
   </a>
-);
+)
 
 export const Products = () => {
   const products = [
     {
       title: 'CodeFlow Platform',
-      description: 'The ultimate project management solution designed specifically for development teams. Streamline workflows, boost productivity, and deliver faster with our intuitive platform.',
+      description:
+        'The ultimate project management solution designed specifically for development teams. Streamline workflows, boost productivity, and deliver faster with our intuitive platform.',
       icon: <Rocket size={32} />,
-      features: ['Real-time Collaboration', 'Sprint Planning Tools', 'Time Tracking', 'CI/CD Integration'],
+      features: [
+        'Real-time Collaboration',
+        'Sprint Planning Tools',
+        'Time Tracking',
+        'CI/CD Integration',
+      ],
     },
     {
       title: 'Analytics Engine',
-      description: 'Transform your data into actionable insights with our powerful analytics engine. Make data-driven decisions with confidence and precision.',
+      description:
+        'Transform your data into actionable insights with our powerful analytics engine. Make data-driven decisions with confidence and precision.',
       icon: <BarChart3 size={32} />,
       features: ['Live Dashboards', 'Predictive Analytics', 'Custom Reports', 'Data Export'],
     },
     {
       title: 'Security Suite',
-      description: 'Enterprise-grade security solutions that protect your digital assets from evolving threats. Sleep soundly knowing your systems are secure.',
+      description:
+        'Enterprise-grade security solutions that protect your digital assets from evolving threats. Sleep soundly knowing your systems are secure.',
       icon: <Shield size={32} />,
       features: ['Threat Detection', 'Compliance Management', 'Audit Logging', '24/7 Monitoring'],
     },
-  ];
+  ]
 
   return (
     <section id="products" className="py-24 px-4 bg-gradient-mesh relative overflow-hidden">
@@ -77,7 +91,10 @@ export const Products = () => {
 
       {/* Decorative Elements */}
       <div className="absolute top-20 right-10 w-40 h-40 bg-green-200 rounded-full mix-blend-multiply filter blur-2xl opacity-30 animate-float"></div>
-      <div className="absolute bottom-20 left-10 w-48 h-48 bg-blue-200 rounded-full mix-blend-multiply filter blur-2xl opacity-30 animate-float" style={{ animationDelay: '1.5s' }}></div>
+      <div
+        className="absolute bottom-20 left-10 w-48 h-48 bg-blue-200 rounded-full mix-blend-multiply filter blur-2xl opacity-30 animate-float"
+        style={{ animationDelay: '1.5s' }}
+      ></div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Section Header */}
@@ -87,17 +104,21 @@ export const Products = () => {
             Our Products
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Solutions That 
-            <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-blue-600"> Drive Success</span>
+            Solutions That
+            <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-blue-600">
+              {' '}
+              Drive Success
+            </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Built by developers, for developers. Our products are crafted with love, designed for performance, and engineered for scale.
+            Built by developers, for developers. Our products are crafted with love, designed for
+            performance, and engineered for scale.
           </p>
         </div>
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product) => (
+          {products.map(product => (
             <ProductCard
               key={product.title}
               title={product.title}
@@ -120,5 +141,5 @@ export const Products = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
